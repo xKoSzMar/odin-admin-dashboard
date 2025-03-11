@@ -33,6 +33,106 @@ header {
   background-color: #fff;
   box-shadow: 0 0 7px -2px gray;
   z-index: 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1.7fr 1fr;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+#search-section {
+  justify-content: start;
+}
+
+#control-section {
+  justify-content: end;
+}
+
+#display-section {
+  justify-content: start;
+}
+
+#nav-section {
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+#nav-section > button {
+  all: unset;
+  background-color: #3190d1;
+  color: #fff;
+  width: 50px;
+  margin: 0 5px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+header > div > img {
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+header > div > h2 {
+  font-size: 1rem;
+}
+
+header > div > div > p {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+header > div > div > h1 {
+  font-size: 1.5rem;
+  margin: 5px 0 5px 0;
+}
+
+#control-section > img {
+  margin-left: 10px;
+}
+
+#notification-bell {
+  border-radius: 100%;
+}
+
+#notification-bell:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: hsl(0, 0%, 80%);
+}
+
+#notification-bell:active {
+  transition: all 0.1s ease-in-out;
+  background-color: hsl(0, 0%, 90%);
+}
+
+#search-bar {
+  width: min(100%, 600px);
+  background-color: #e2e8f0;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 7px;
+}
+
+#search-bar:hover {
+  border: 2px solid gray;
+  transition: all 0.05s ease-in-out;
+}
+
+#search-bar:focus {
+  border: 2px solid gray;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  object-fit: fill;
+  display: flex;
+  flex-shrink: 0;
 }
 
 #content {
@@ -52,13 +152,15 @@ header {
   text-decoration: none;
 }
 
-.nav-button:hover {
-  transition: 0.2s ease-in-out all;
+.nav-button:hover,
+#nav-section > button:hover {
+  transition: all 0.2s ease-in-out;
   background-color: hsl(204, 63%, 40%);
 }
 
-.nav-button:active {
-  transition: 0.1s ease-in-out all;
+.nav-button:active,
+#nav-section > button:active {
+  transition: all 0.1s ease-in-out;
   background-color: hsl(204, 63%, 70%);
 }
 
