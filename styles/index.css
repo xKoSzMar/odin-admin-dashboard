@@ -247,7 +247,8 @@ aside > div {
 
 .aside-content-2 > div {
   display: flex;
-  padding: 15px 7px;
+  align-items: center;
+  padding: 10px 7px;
   cursor: pointer;
 }
 
