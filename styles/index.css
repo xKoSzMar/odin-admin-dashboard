@@ -145,12 +145,14 @@ header > div > div > h1 {
   border-radius: 100%;
 }
 
-#notification-bell:hover {
+#notification-bell:hover,
+.aside-content-2 > div:hover {
   transition: all 0.2s ease-in-out;
   background-color: hsl(0, 0%, 80%);
 }
 
-#notification-bell:active {
+#notification-bell:active,
+.aside-content-2 > div:active {
   transition: all 0.1s ease-in-out;
   background-color: hsl(0, 0%, 90%);
 }
@@ -211,7 +213,7 @@ aside > div {
   background-color: #fff;
   box-shadow: 1px 2px 7px -2px gray;
   border-radius: 7px;
-  padding: 30px 25px 10px 25px;
+  padding: 15px 25px 10px 25px;
 }
 
 .aside-content-1 > div {
@@ -221,7 +223,6 @@ aside > div {
 }
 
 .aside-content-1 > div:first-child {
-  padding-top: 0;
   border-top: none;
 }
 
@@ -243,7 +244,7 @@ aside > div {
   background-color: #fff;
   box-shadow: 1px 2px 7px -2px gray;
   border-radius: 7px;
-  padding: 25px;
+  padding: 20px 25px 25px 25px;
 }
 
 .aside-content-2 > div {
@@ -251,10 +252,7 @@ aside > div {
   align-items: center;
   padding: 10px 7px;
   cursor: pointer;
-}
-
-.aside-content-2 > div:first-child {
-  padding-top: 0;
+  border-radius: 15px;
 }
 
 .aside-content-2 > div > div {
