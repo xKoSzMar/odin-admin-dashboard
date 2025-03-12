@@ -118,9 +118,19 @@ header > div {
   cursor: pointer;
 }
 
-header > div > img {
+header > div > img,
+#notification-bell {
   cursor: pointer;
   margin-right: 15px;
+}
+
+#notification-bell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
 }
 
 header > div > h2 {
@@ -137,21 +147,20 @@ header > div > div > h1 {
   margin: 5px 0 5px 0;
 }
 
-#control-section > img {
-  margin-left: 10px;
-}
-
-#notification-bell {
+#notification-bell,
+.card > div > img {
   border-radius: 100%;
 }
 
 #notification-bell:hover,
+.card > div > div:hover,
 .aside-content-2 > div:hover {
   transition: all 0.2s ease-in-out;
   background-color: hsl(0, 0%, 80%);
 }
 
 #notification-bell:active,
+.card > div > div:active,
 .aside-content-2 > div:active {
   transition: all 0.1s ease-in-out;
   background-color: hsl(0, 0%, 90%);
@@ -196,23 +205,77 @@ main > aside {
   flex: 2.7;
 }
 
+#post-section > div {
+  display: grid;
+  grid-auto-rows: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: start;
+  align-items: start;
+}
+
 .header {
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
-aside > div {
-  margin-bottom: 30px;
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 1px 2px 7px -2px gray;
+  padding: 20px;
+  border-left: 7px solid #ecb63d;
 }
 
-.aside-content-1 {
+.card > h2 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.card > p {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.card > div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.card > div:last-child {
+  margin-top: auto;
+}
+
+.card > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+aside > div {
+  margin-bottom: 15px;
+}
+
+.aside-content {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: fit-content;
   background-color: #fff;
-  box-shadow: 1px 2px 7px -2px gray;
   border-radius: 7px;
+  box-shadow: 1px 2px 7px -2px gray;
+}
+
+.aside-content-1 {
   padding: 15px 25px 10px 25px;
 }
 
@@ -237,13 +300,6 @@ aside > div {
 }
 
 .aside-content-2 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
-  background-color: #fff;
-  box-shadow: 1px 2px 7px -2px gray;
-  border-radius: 7px;
   padding: 20px 25px 25px 25px;
 }
 
