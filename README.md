@@ -6,10 +6,10 @@ It is an admin-dashboard created using grid and flexbox.
 
 It contains:
 
--nav bar
--header with search bar, buttons and notification icon
--main section with responsive cards
--aside with two sections
+- nav bar
+- header with search bar, buttons and notification icon
+- main section with responsive cards
+- aside with two sections
 
 Technologies:
 
